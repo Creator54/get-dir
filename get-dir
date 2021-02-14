@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#this script downloads all files inside a remote dir
+
+read -p "Give repo/dir link: " link
+
+wget -r –level=0 -E –ignore-length -x -k -p -erobots=off -np -N $link
