@@ -5,3 +5,5 @@
 read -p "Give repo/dir link: " link
 
 wget -r –level=0 -E –ignore-length -x -k -p -erobots=off -np -N $link
+
+# credits: https://www.linux.com/training-tutorials/wget-and-downloading-entire-remote-directory/
